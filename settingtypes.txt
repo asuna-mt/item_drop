@@ -14,13 +14,13 @@ item_drop.pickup_keyinvert (Invert pickup key) bool true
 item_drop.pickup_keytype (Pickup keytype) enum Use Use,Sneak,LeftAndRight,RMB,SneakAndRMB
 
 #The volume of the pickup sound
-item_drop.pickup_sound_gain (Pickup sound gain) float 0.4
+item_drop.pickup_sound_gain (Pickup sound gain) float 0.0375
 
 #Display a particle of the item picked up above the player
-item_drop.pickup_particle (Pickup particle) bool true
+item_drop.pickup_particle (Pickup particle) bool false
 
 #Player pickup radius, the maximum distance from which items can be collected
-item_drop.pickup_radius (Pickup radius) float 0.75
+item_drop.pickup_radius (Pickup radius) float 1.5
 
 #Magnet radius, items between pickup_radius and this begin flying to the player
 #Set it to -1 (or something else smaller than pickup_radius) to disable item
@@ -32,7 +32,7 @@ item_drop.magnet_radius (Magnet radius) float -1
 item_drop.magnet_time (Magnet time) float 5.0
 
 #Time delay in seconds after autopicking an item if it's dropped by a player
-item_drop.pickup_age (Pickup age) float 0.5
+item_drop.pickup_age (Pickup age) float 1
 
 #Enable manual item pickups by mouse
 item_drop.mouse_pickup (Mouse pickup) bool true
